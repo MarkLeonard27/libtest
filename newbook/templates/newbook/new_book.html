@@ -7,16 +7,14 @@
             <h1><a href="">Add a book to the library</a></h1>
         </div>
 
+    {% for book in books %}
         <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Arsenal Aresnal.</p>
+            <p>Title: {{ book.title}}</p>
+            <p>Author: {{ book.auth}}</p>
+            <p>Location: {{ book.loc}}</p>
+            <p>Genre: {{book.genre}}</p>
         </div>
+    {% endfor %}
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My second post</a></h2>
-            <p>Suzy, Michael, Caitlin and Daniel</p>
-        </div>
     </body>
 </html>
